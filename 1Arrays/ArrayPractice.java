@@ -41,6 +41,9 @@ public class ArrayPractice
         }
         System.out.println("Max Freq Key: "+maxFreqCountKey+ " count: "+maxFreqCount);
     }
+    void intersectionOfTwoArrays(int arr1[], int arr2[])
+    {
+    }
     public static void main(String[] args) 
     {
         int arr[] = {1,2,2,5,2,2,4,1,4,3,3,4};
@@ -51,5 +54,9 @@ public class ArrayPractice
         int arr2[] = {1,1,1,1,2,2,2,3,3,4};
         System.out.println("Mode of Array:");
         obj.modeOfAnArray(arr2);
+
+        int arr3[] = {1,2,5,10,11,13,20};
+        int arr4[] = {2,4,8,10,12,18,20};
+        obj.intersectionOfTwoArrays(arr3, arr4);
     }
 }
