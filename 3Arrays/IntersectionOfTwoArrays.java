@@ -20,6 +20,23 @@ public class IntersectionOfTwoArrays
             }
         }
     }
+    void usingHashmapNoDupl(int arr1[], int arr2[])
+    {
+        Map <Integer, Integer> map = new HashMap<>();
+        for(int num : arr1) 
+        {
+            map.put(num, 1);
+        }
+        System.out.println(map);
+        for(int num : arr2)
+        {
+            if(map.containsKey(num) && map.get(num) == 1)
+            {
+                System.out.println(num);
+                map.put(num, 0);
+            }
+        }
+    }
     public static void main(String[] args) 
     {
         int arr1[] = {1,1,2,3,3,4,4,4,5};
@@ -57,5 +74,8 @@ public class IntersectionOfTwoArrays
 
         IntersectionOfTwoArrays obj = new IntersectionOfTwoArrays();
         obj.usingHashmap(arr1, arr2);
+
+        System.out.println("no duplicates");
+        obj.usingHashmapNoDupl(arr1, arr2);
     }
 }
