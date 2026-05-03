@@ -1,9 +1,29 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class IntersectionOfTwoArrays 
 {
+    void usingHashmap(int arr1[], int arr2[])
+    {
+        Map <Integer, Integer> map = new HashMap<>();
+        for(int num : arr1) 
+        {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+        System.out.println(map);
+        for(int num : arr2)
+        {
+            if(map.containsKey(num) && map.get(num)>0)
+            {
+                System.out.println(num);
+                map.put(num, map.get(num)-1);
+            }
+        }
+    }
     public static void main(String[] args) 
     {
-        int arr1[] = {1,2,3,4,5,6,7,8,9,10,20};
-        int arr2[] = {2,4,6,8,10,12,14,16,18,20};
+        int arr1[] = {1,1,2,3,3,4,4,4,5};
+        int arr2[] = {1,3,3,3,5,7,9,11};
 
         int count = 0;
         for(int i=0; i<=arr1.length-1; i++)
@@ -34,5 +54,8 @@ public class IntersectionOfTwoArrays
         {
             System.out.println(commonArr[i]);
         }
+
+        IntersectionOfTwoArrays obj = new IntersectionOfTwoArrays();
+        obj.usingHashmap(arr1, arr2);
     }
 }
