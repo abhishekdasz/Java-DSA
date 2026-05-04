@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class Common 
 {
     void evenElements(int arr1[])
