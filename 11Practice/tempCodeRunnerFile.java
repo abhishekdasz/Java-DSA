@@ -1,1 +1,1 @@
-System.out.println("For index: " + i + " sum of left: "+sumOfLeft+ " sum of right: "+sumOfRight);
+arr
