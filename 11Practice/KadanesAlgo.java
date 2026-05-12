@@ -8,7 +8,7 @@ public class KadanesAlgo
         {
             sum = sum+arr[i];
             if(sum<0)
-            {
+            {  
                 sum = 0;
             }
             if(sum>maxSum)
