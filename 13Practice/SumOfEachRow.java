@@ -1,4 +1,4 @@
-class TwoDArray
+class SumOfEachRow
 {
     public static void main(String[]args)
     {
