@@ -4,27 +4,20 @@ public class WavePrintAMatrix
     {
         int arr[][] = {{1,2,3,4,},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
 
-        for(int row=0; row<=arr[0].length-1; row++)
+        for(int col=0; col<=arr[0].length-1; col++)
         {
-            if(row==0)
+            if(col%2==0)
             {
-                for(int col=0; col<=arr.length-1; col++)
+                for(int row=0; row<=arr.length-1; row++)
                 {
-                    System.out.print(arr[col][row]+ " ");
+                    System.out.print(arr[row][col]+ " ");
                 }
             }
-            if(row%2==0 && row!=0)
+            else if(col%2==1)
             {
-                for(int col=0; col<=arr.length-1; col++)
-                {
-                    System.out.print(arr[col][row]+ " ");
-                }
-            }
-            else if(row%2==1 && row!=0)
+            for(int row=arr.length-1; row>=0; row--)
             {
-            for(int col=arr.length-1; col>=0; col--)
-            {
-                System.out.print(arr[col][row]+" ");
+                System.out.print(arr[row][col]+" ");
             }
             }
             System.out.println();
