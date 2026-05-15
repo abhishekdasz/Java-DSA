@@ -2,7 +2,7 @@ public class TransposeOfMatrix
 {
     public static void main(String[] args) 
     {
-        int arr[][] = {{1,2,3},{4,5,6}};
+        int arr[][] = {{1,2,3,7},{4,5,6,8}};
         for(int i=0; i<=arr[0].length-1; i++)
         {
             for(int j=0; j<=arr.length-1; j++)
