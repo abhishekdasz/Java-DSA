@@ -28,5 +28,5 @@ public class Practice
         int arr1[][] = {{1,2,3},{4,5,6},{7,8,9},{10,11,12}};  
         Practice obj = new Practice();
         obj.printRotate(arr1);   
-    }
+    }  
 }
